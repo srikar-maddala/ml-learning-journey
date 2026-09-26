@@ -16,6 +16,7 @@ transformers and LLMs. Each folder is a self-contained notebook project with its
 | 4 | [Fashion-MNIST classification](02-deep-learning/fashion-mnist) | Deep learning fundamentals | PyTorch MLP, custom Dataset/DataLoader | 83.3% test accuracy |
 | 5 | [IMDb sentiment classification](03-nlp-and-llms/bert-imdb-sentiment) | NLP, transfer learning | Fine-tuned DistilBERT (Hugging Face Trainer) | Eval loss 0.35 |
 | 6 | [LLM inference](03-nlp-and-llms/llm-inference-huggingface) | LLMs, text generation | LiquidAI LFM2.5-2.6B, sampling parameters | Qualitative experiments |
+| 7 | [Research paper explainer](03-nlp-and-llms/chat-prompt-templates) | LLM apps, prompt engineering | LangChain prompt templates + Streamlit UI | Interactive app |
 
 ## What I learned
 
@@ -28,10 +29,11 @@ transformers and LLMs. Each folder is a self-contained notebook project with its
   test file with per-class metrics.
 - **Transfer learning:** fine-tuning a pretrained DistilBERT gets strong NLP results with little code.
 - **How LLMs generate text:** tokenization, autoregressive decoding, temperature, top-k and top-p sampling.
+- **Prompt engineering:** reusable LangChain prompt templates with variables, wrapped in a small Streamlit app.
 
 ## Tech stack
 
-Python · NumPy · Pandas · scikit-learn · PyTorch · Hugging Face Transformers & Datasets · Matplotlib ·
+Python · NumPy · Pandas · scikit-learn · PyTorch · Hugging Face Transformers & Datasets · LangChain · Streamlit · Matplotlib ·
 Jupyter / Google Colab
 
 ## Structure
@@ -46,4 +48,5 @@ Jupyter / Google Colab
 03-nlp-and-llms/
   bert-imdb-sentiment/    DistilBERT fine-tuning
   llm-inference-huggingface/   LLM text generation
+  chat-prompt-templates/  LangChain prompt templates + Streamlit
 ```
