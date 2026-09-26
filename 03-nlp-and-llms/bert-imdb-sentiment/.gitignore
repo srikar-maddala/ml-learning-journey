@@ -1,0 +1,14 @@
+# Hugging Face model files
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Python cache
+__pycache__/
+
+# Logs
+logs/
+
+# Tensorboard
+runs/
